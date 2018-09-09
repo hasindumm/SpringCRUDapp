@@ -48,6 +48,15 @@ public class CustomerController {
 	
 	
 	
+
+	@GetMapping("/showHome")
+	public String showHome() {
+				
+		
+		return "home";
+	}
+	
+	
 	@PostMapping("/saveCustomer")
 	public String saveCustomer(@ModelAttribute("customer") Customer theCustomer) {
 		

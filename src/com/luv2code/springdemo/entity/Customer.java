@@ -16,55 +16,170 @@ public class Customer {
 	@Column(name="id")
 	private int id;
 	
-	@Column(name="first_name")
-	private String firstName;
+	@Column(name="product_key")
+	private String productKey;
 	
-	@Column(name="last_name")
-	private String lastName;
+	@Column(name="service_provider")
+	private String serviceProvider;
 	
-	@Column(name="email")
-	private String email;
+	@Column(name="date_purchased")
+	private String datePurchased;
+	
+	@Column(name="warranty")
+	private String warranty;
+	
+	@Column(name="status")
+	private String status;
+	
+	@Column(name="value")
+	private String value;
+	
+	@Column(name="software")
+	private String software;
+	
+	@Column(name="funded_by")
+	private String fundedBy;
+	
+	@Column(name="purchased_details")
+	private String purchasedDetails;
+	
+
 	
 	public Customer() {
 		
 	}
 
+
+
 	public int getId() {
 		return id;
 	}
+
+
 
 	public void setId(int id) {
 		this.id = id;
 	}
 
-	public String getFirstName() {
-		return firstName;
+
+
+	public String getProductKey() {
+		return productKey;
 	}
 
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+
+
+	public void setProductKey(String productKey) {
+		this.productKey = productKey;
 	}
 
-	public String getLastName() {
-		return lastName;
+
+
+	public String getServiceProvider() {
+		return serviceProvider;
 	}
 
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
+
+
+	public void setServiceProvider(String serviceProvider) {
+		this.serviceProvider = serviceProvider;
 	}
 
-	public String getEmail() {
-		return email;
+
+
+	public String getDatePurchased() {
+		return datePurchased;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+
+
+	public void setDatePurchased(String datePurchased) {
+		this.datePurchased = datePurchased;
 	}
+
+
+
+	public String getWarranty() {
+		return warranty;
+	}
+
+
+
+	public void setWarranty(String warranty) {
+		this.warranty = warranty;
+	}
+
+
+
+	public String getStatus() {
+		return status;
+	}
+
+
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+
+
+	public String getValue() {
+		return value;
+	}
+
+
+
+	public void setValue(String value) {
+		this.value = value;
+	}
+
+
+
+	public String getSoftware() {
+		return software;
+	}
+
+
+
+	public void setSoftware(String software) {
+		this.software = software;
+	}
+
+
+
+	public String getFundedBy() {
+		return fundedBy;
+	}
+
+
+
+	public void setFundedBy(String fundedBy) {
+		this.fundedBy = fundedBy;
+	}
+
+
+
+	public String getPurchasedDetails() {
+		return purchasedDetails;
+	}
+
+
+
+	public void setPurchasedDetails(String purchasedDetails) {
+		this.purchasedDetails = purchasedDetails;
+	}
+
+
 
 	@Override
 	public String toString() {
-		return "Customer [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email + "]";
+		return "Customer [id=" + id + ", productKey=" + productKey + ", serviceProvider=" + serviceProvider
+				+ ", datePurchased=" + datePurchased + ", warranty=" + warranty + ", status=" + status + ", value="
+				+ value + ", software=" + software + ", fundedBy=" + fundedBy + ", purchasedDetails=" + purchasedDetails
+				+ "]";
 	}
+
+	
 		
 }
 
