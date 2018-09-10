@@ -5,7 +5,7 @@
 <html>
 
 <head>
-	<title>List Customers</title>
+	<title>Show item</title>
 
 	<!-- reference our style sheet -->
 
@@ -27,7 +27,7 @@
 
 	<div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <h1 class="display-4">SOFT ASSET</h1>
+    <h1 class="display-4">ITEM LIST</h1>
     <p class="lead"></p>
   </div>
 </div>
@@ -45,7 +45,7 @@
 		
 		
 			
-			<button type="button" class="btn btn-primary"  onclick="window.location.href='showFormForAdd'; return false;">Add Asset</button>
+			<button type="button" class="btn btn-primary"  onclick="window.location.href='showFormForAdd'; return false;">Add item</button>
 			
 			<br>
 			<br>
@@ -54,34 +54,37 @@
 		
 			<table class="table table-striped">
 				<tr>
+					
 					<th>Id</th>
-					<th>Product Key</th>
 					<th>Service Provider</th>
 					<th>Date Purchased</th>
 					<th>Warranty</th>
 					<th>Status</th>
 					<th>Value</th>
-					<th>Software</th>
 					<th>Funded By</th>
 					<th>Purchased Details</th>
-					
-					
+					<th>type</th>
+					<th>Person In Charge</th>
+					<th>Section</th>
+					<th>quantity</th>
 				</tr>
 				
 				<!-- loop over and print our customers -->
-				<c:forEach var="tempCustomer" items="${customers}">
+				<c:forEach var="tempCustomer1" items="${customers1}">
 				
 					<tr>
-						<td> ${tempCustomer.id} </td>					
-						<td> ${tempCustomer.productKey} </td>
-						<td> ${tempCustomer.serviceProvider} </td>
-						<td> ${tempCustomer.datePurchased} </td>
-						<td> ${tempCustomer.warranty} </td>
-						<td> ${tempCustomer.status} </td>
-						<td> ${tempCustomer.value} </td>
-						<td> ${tempCustomer.software} </td>
-						<td> ${tempCustomer.fundedBy} </td>
-						<td> ${tempCustomer.purchasedDetails} </td>
+						<td> ${tempCustomer1.id} </td>					
+						<td> ${tempCustomer1.serviceProvider} </td>
+						<td> ${tempCustomer1.datePurchased} </td>
+						<td> ${tempCustomer1.warranty} </td>
+						<td> ${tempCustomer1.status} </td>
+						<td> ${tempCustomer1.value} </td>
+						<td> ${tempCustomer1.fundedBy} </td>
+						<td> ${tempCustomer1.type} </td>
+						<td> ${tempCustomer1.personInCharge} </td>
+						<td> ${tempCustomer1.section} </td>
+						<td> ${tempCustomer1.quantity} </td>
+						<td> ${tempCustomer1.purchasedDetails} </td>
 						
 						
 						

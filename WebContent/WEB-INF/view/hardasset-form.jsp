@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Home - asset module</title>
+	<title>Hard Asset</title>
 	
-	<!-- Latest compiled and minified CSS -->
+	
+	
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-
+	
 	
 </head>
 <body>
 
 
-
-
-
-    <div class="container">
+<div class="container">
 
       <!-- Static navbar -->
       <nav class="navbar navbar-default">
@@ -34,11 +31,11 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="" onclick="window.location.href='list'; return false;"><a href="#">Soft Asset</a></li>
-              <li class="" onclick="window.location.href='hardAsset'; return false;"><a href="#">Hard Asset</a></li>
-              <li><a href="#">Service and maintenance</a></li>
-              <li><a href="#">reservation</a></li>
-              <li><a href="#">reports</a></li>
+             <li class="" onclick="window.location.href='showItem'; return false;"><a href="#">Items</a></li>
+              <li><a href="#">Property</a></li>
+              <li><a href="#">Inventory</a></li>
+              <li><a href="#">Vehicle</a></li>
+              <li><a href="#">Laboratories</a></li>
               
               
               
@@ -48,16 +45,14 @@
         </div><!--/.container-fluid -->
       </nav>
 
-      <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <h1>ASSET MANAGMENT MODULE</h1>
-        <p>This example is a quick exercise to illustrate how the default, static navbar and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
-        <p>
-          <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
-        </p>
-      </div>
-
+   
     </div> <!-- /container -->
+
+	
+
+
+
+
 
 
 

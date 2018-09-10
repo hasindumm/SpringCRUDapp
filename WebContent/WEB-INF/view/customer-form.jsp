@@ -31,39 +31,39 @@
 	
 <form:form action="saveCustomer" modelAttribute="customer" method="POST">
   <div class="form-group">
-   &nbsp; <label for="exampleInputEmail1">Product Key</label>
+   &nbsp; &nbsp; <label for="exampleInputEmail1">Product Key</label>
     <form:input path="productKey" type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=""/>
      </div>
   <div class="form-group">
-   &nbsp; <label>Service Provider:</label>
+   &nbsp; &nbsp; <label>Service Provider:</label>
     <form:input path="serviceProvider" type=""  class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder=""/>
   </div>
   <div class="form-group">
-    &nbsp;<label>Date Purchased:</label>
+    &nbsp; &nbsp;<label>Date Purchased:</label>
     <form:input path="datePurchased" type="" class="form-control" id="exampleInputEmai" aria-describedby="emailHelp" placeholder="" />
   </div>
   <div class="form-group">
-    &nbsp;<label>Warranty:</label>
+    &nbsp; &nbsp;<label>Warranty:</label>
     <form:input path="warranty" type="" class="form-control" id="exampleInputEma" aria-describedby="emailHelp" placeholder="" />
   </div>
   <div class="form-group">
-    &nbsp;<label>Status:</label>
+    &nbsp; &nbsp;<label>Status:</label>
     <form:input path="status" type="" class="form-control" id="exampleInputEm" aria-describedby="emailHelp" placeholder="" />
   </div>
   <div class="form-group">
-    &nbsp;<label>Value:</label>
+    &nbsp; &nbsp;<label>Value:</label>
     <form:input path="value" type="" class="form-control" id="exampleInputE" aria-describedby="emailHelp" placeholder="" />
   </div> 
   <div class="form-group">
-    &nbsp;<label>Software:</label>
+    &nbsp; &nbsp;<label>Software:</label>
     <form:input path="software" type="" class="form-control" id="exampleInput" aria-describedby="emailHelp" placeholder=""/>
   </div> 
   <div class="form-group">
-    &nbsp;<label>Funded By:</label>
+    &nbsp; &nbsp;<label>Funded By:</label>
     <form:input path="fundedBy" type="" class="form-control" id="exampleInpu" aria-describedby="emailHelp" placeholder=""/>
   </div>   
   <div class="form-group">
-    &nbsp;<label>Purchased Details:</label>
+    &nbsp; &nbsp;<label>Purchased Details:</label>
    <form:input path="purchasedDetails" type="" class="form-control" id="exampleInp" aria-describedby="emailHelp" placeholder=""/>
   </div>   
   
@@ -71,7 +71,7 @@
   
   
   
-  &nbsp;<button type="submit" class="btn btn-primary">Submit</button>
+  &nbsp; &nbsp;<button type="submit" class="btn btn-primary">Submit</button>
 </form:form>
 
 
@@ -81,7 +81,7 @@
 		<div style="clear; both;"></div>
 		
 		<p>
-			&nbsp;<a href="${pageContext.request.contextPath}/customer/list">Back to List</a>
+			&nbsp; &nbsp;<a href="${pageContext.request.contextPath}/customer/list">Back to List</a>
 		</p>
 	
 	
