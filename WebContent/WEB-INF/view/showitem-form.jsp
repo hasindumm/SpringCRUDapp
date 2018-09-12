@@ -45,7 +45,7 @@
 		
 		
 			
-			<button type="button" class="btn btn-primary"  onclick="window.location.href='showFormForAdd'; return false;">Add item</button>
+			<button type="button" class="btn btn-primary"  onclick="window.location.href=''; return false;">Add item</button>
 			
 			<br>
 			<br>

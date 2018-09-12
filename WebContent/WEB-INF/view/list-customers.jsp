@@ -64,12 +64,23 @@
 					<th>Software</th>
 					<th>Funded By</th>
 					<th>Purchased Details</th>
-					
+					<th>Action</th>
 					
 				</tr>
 				
 				<!-- loop over and print our customers -->
 				<c:forEach var="tempCustomer" items="${customers}">
+				<c:url var = "updateLink" value="/customer/showFormForUpdate">
+					<c:param name = "customerId" value="${tempCustomer.id }" />
+				
+				</c:url>
+				
+				
+				<c:url var = "deleteLink" value="/customer/delete">
+					<c:param name = "customerId" value="${tempCustomer.id }" />
+				
+				</c:url>
+				
 				
 					<tr>
 						<td> ${tempCustomer.id} </td>					
@@ -82,7 +93,10 @@
 						<td> ${tempCustomer.software} </td>
 						<td> ${tempCustomer.fundedBy} </td>
 						<td> ${tempCustomer.purchasedDetails} </td>
-						
+						<td> <a href = "${updateLink}"> Update </a>
+						|
+						<a href = "${deleteLink}" onclick="if (!(confirm('Are you sure you want to delete this asset?'))) return false"> Delete </a>
+						</td>
 						
 						
 					</tr>

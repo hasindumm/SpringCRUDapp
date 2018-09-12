@@ -30,6 +30,8 @@
 
 	
 <form:form action="saveCustomer" modelAttribute="customer" method="POST">
+<form:hidden path = "id" />
+
   <div class="form-group">
    &nbsp; &nbsp; <label for="exampleInputEmail1">Product Key</label>
     <form:input path="productKey" type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=""/>
